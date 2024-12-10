@@ -42,26 +42,25 @@
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
       <a href="index.html" class="logo d-flex align-items-center me-auto">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
+        
+        <!-- LOGO -->
         <h1 class="sitename"><img src="assets/img/logoProsuma.png" alt="logoProsuma"></h1>
       </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html">Accueil<br></a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#team">Team</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li class="dropdown"><a href="#"><span>Les modules</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li><a href="index.html#hero">Accueil<br></a></li>
+          <li><a href="index.html#programme">Programme</a></li>
+          <li><a href="index.html#tache">Nos Tâches</a></li>
+          <li><a href="index.html#team">Team</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+          <li class="dropdown"><a href="#" class="active"><span>Les modules</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li class="dropdown"><a href="#"><span>Présentation module 1, 2 & 3</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <li class="dropdown"><a href="moduleOne.html"><span>Présentation module 1, 2 & 3</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                 <ul>
-                  <li><a href="#">Zoom</a></li>
-                  <li><a href="#">Nécessité</a></li>
-                  <li><a href="#">Ingénierie sociale</a></li>
+                  <li><a href="moduleOne.html#zoom">Zoom</a></li>
+                  <li><a href="moduleOne.html#necessity">Nécessité</a></li>
+                  <li><a href="moduleOne.html#social">Ingénierie sociale</a></li>
                 </ul>
               </li>
               <li class="dropdown"><a href="moduleTwo.html"><span>Présentation module 4, 5 & 6</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
@@ -76,15 +75,14 @@
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
-
-      <a class="btn-getstarted" href="index.html#about">Get Started</a>
+      <a class="btn-getstarted" href="moduleOne.html">Commencer</a>
 
     </div>
   </header>
 
   <main class="main">
 
-    <!-- Page Title -->
+    <!-- INFORMATION Title -->
     <div class="page-title" data-aos="fade">
       <div class="container">
         <nav class="breadcrumbs">
@@ -95,9 +93,10 @@
         </nav>
         <h1>Présentation des modules 1, 2 et 3</h1>
       </div>
-    </div><!-- End Page Title -->
+    </div>
+    <!-- End INFORMATION Title -->
 
-    <!-- Service Details Section -->
+    <!-- all MODULES Details Section -->
     <section id="service-details" class="service-details section">
 
       <div class="container">
@@ -107,11 +106,11 @@
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
             <div class="services-list">
               <a href="#zoom" class="active">1. Zoom sur la cybercriminalité</a>
-              <a href="#">2. Nécessité à la sensibilisation</a>
-              <a href="#">3. Ingénierie sociale</a>
+              <a href="#necessity">2. Nécessité à la sensibilisation</a>
+              <a href="#social">3. Ingénierie sociale</a>
             </div>
           </div>
-          <div class="container">
+          <div class="container" id="zoom">
             <h4>Avant de commencer,</h4>
             <p>L'objectif n'est pas de susciter de la peur, mais de promouvoir
               une approche responsable et proactive de la cybersécurité.
@@ -120,11 +119,15 @@
               protection.</p> <br> <br>
           </div>
 
+          
+          
+
           <!-- Section Title -->
-          <div class="container section-title"data-aos="fade-up" id="zoom">
+          <div class="container section-title"data-aos="fade-up">
             <h3>Module <i class="bi bi-1-circle-fill"></i> : ZOOM SUR LA CYBERCRIMINALITÉ</h3>
           </div><!-- End Section Title -->
       
+
           <!-- MODULE 1 -->
           <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
             <img src="assets/img/services.jpg" alt="" class="img-fluid services-img">
@@ -228,7 +231,7 @@
                 <li><i class="bi bi-hand-thumbs-down-fill"></i><span><strong>Détournement de sessions</strong> : S’emparer d'une session utilisateur active (ex. banque en ligne).
                   </span>
                 </li>
-                <li><i class="bi bi-hand-thumbs-down-fill"></i><span><strong>Espionnage</strong> : Surveiller les communications confidentielles ou les manipuler.</span>
+                <li id="necessity"><i class="bi bi-hand-thumbs-down-fill"></i><span><strong>Espionnage</strong> : Surveiller les communications confidentielles ou les manipuler.</span>
                 </li>
                   <p>
                   <i class="bi bi-bug-fill"></i>Exemple d'attaque : Un cybercriminel peut intercepter une connexion non chiffrée sur un réseau Wi-Fi public pour accéder aux identifiants d’une victime se connectant à son compte bancaire.              
@@ -292,7 +295,7 @@
           <h2>c. Protection des actifs numériques </h2>
           <ul>
             <li><i class="bi bi-hand-thumbs-up-fill"></i>Préservation des données</li>
-            <li><i class="bi bi-hand-thumbs-up-fill"></i>Continuité opérationnelle</li>
+            <li id="social"><i class="bi bi-hand-thumbs-up-fill"></i>Continuité opérationnelle</li>
             <li><i class="bi bi-hand-thumbs-up-fill"></i>Confidentialité</li>
             <li><i class="bi bi-hand-thumbs-up-fill"></i>Intégrité des systèmes</li>
           </ul>
@@ -382,7 +385,8 @@
 
       </div>
 
-    </section><!-- /Service Details Section -->
+    </section>
+    <!-- /all MODULES Details Section -->
 
   </main>
 
