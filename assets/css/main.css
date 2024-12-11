@@ -10,6 +10,9 @@
 # Font & Color Variables
 # Help: https://bootstrapmade.com/color-system/
 --------------------------------------------------------------*/
+.my-custom-color{
+  background-color: #fecc00;
+}
 /* Fonts */
 :root {
   --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto,
@@ -21,10 +24,11 @@
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root {
+  --icon-bg-color: #fecc00;
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
   --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #222222; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #0d0b7c; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --accent-color: #161F43; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
@@ -181,8 +185,9 @@ h6 {
 
 .header .btn-getstarted:hover,
 .header .btn-getstarted:focus:hover {
-  color: var(--contrast-color);
-  background: color-mix(in srgb, var(--accent-color), transparent 15%);
+  color: black;
+  font-weight: bold;
+  background: color-mix(in srgb, var(--icon-bg-color), transparent 15%);
 }
 
 @media (max-width: 1200px) {
@@ -446,8 +451,8 @@ h6 {
 # Global Footer
 --------------------------------------------------------------*/
 .footer {
-  color: var(--default-color);
-  background-color: var(--background-color);
+  color: var(--surface-color);
+  background-color: var(--accent-color);
   font-size: 14px;
   padding: 40px 0;
   position: relative;
@@ -469,9 +474,10 @@ h6 {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  border: 1px solid color-mix(in srgb, var(--default-color), transparent 50%);
+  border: 1px solid color-mix(in srgb, transparent 50%);
+  background-color: var(--surface-color);
   font-size: 16px;
-  color: color-mix(in srgb, var(--default-color), transparent 50%);
+  color: color-mix(in srgb, var(--nav-dropdown-hover-color), transparent 1%);
   margin: 0 5px;
   transition: 0.3s;
 }
@@ -479,12 +485,22 @@ h6 {
 .footer .social-links a:hover {
   color: var(--accent-color);
   border-color: var(--accent-color);
+  background-color: var(--icon-bg-color);
 }
 
 .footer .credits {
   margin-top: 10px;
   font-size: 13px;
   text-align: center;
+}
+
+.footer .credits a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer .credits svg{
+  color: #fff;
 }
 
 /*--------------------------------------------------------------
@@ -685,7 +701,7 @@ section,
 
 .hero .btn-get-started {
   font-family: var(--heading-font);
-  font-weight: 500;
+  font-weight: bold;
   font-size: 15px;
   letter-spacing: 1px;
   display: inline-block;
@@ -696,8 +712,10 @@ section,
 }
 
 .hero .btn-get-started:hover {
-  color: var(--contrast-color);
-  background: var(--accent-color);
+  color: black;
+  font-weight: bold;
+  border: none;
+  background: var(--icon-bg-color);
 }
 
 .hero .animated {
@@ -737,6 +755,7 @@ section,
 --------------------------------------------------------------*/
 .clients {
   padding: 20px 0;
+  background-color: #0d0b7c32;
 }
 
 .clients .client-logo {
@@ -747,7 +766,7 @@ section,
 }
 
 .clients .client-logo img {
-  padding: 20px 40px;
+  padding: 10px 30px;
   max-width: 90%;
   transition: 0.3s;
   opacity: 0.5;
@@ -797,8 +816,9 @@ section,
 }
 
 .about .content .about-btn:hover {
-  background: var(--accent-color);
-  color: var(--contrast-color);
+  background: var(--icon-bg-color);
+  color: black;
+  border: none;
 }
 
 .about .icon-box i {
@@ -943,7 +963,7 @@ section,
 }
 
 .services .service-item:hover i {
-  background: var(--surface-color);
+  background: var(--icon-bg-color);
   color: var(--accent-color);
 }
 
@@ -1194,7 +1214,7 @@ section,
 # Team Section
 --------------------------------------------------------------*/
 .team .team-member {
-  background-color: var(--surface-color);
+  background-color: var(--icon-bg-color);
   overflow: hidden;
   border-radius: 5px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
@@ -1514,75 +1534,6 @@ section,
 
 .contact .php-email-form button[type="submit"]:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 20%);
-}
-
-/*--------------------------------------------------------------
-# Portfolio Details Section
---------------------------------------------------------------*/
-.portfolio-details .portfolio-details-slider img {
-  width: 100%;
-}
-
-.portfolio-details .portfolio-details-slider .swiper-pagination {
-  margin-top: 20px;
-  position: relative;
-}
-
-.portfolio-details
-  .portfolio-details-slider
-  .swiper-pagination
-  .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: color-mix(in srgb, var(--default-color), transparent 85%);
-  opacity: 1;
-}
-
-.portfolio-details
-  .portfolio-details-slider
-  .swiper-pagination
-  .swiper-pagination-bullet-active {
-  background-color: var(--accent-color);
-}
-
-.portfolio-details .portfolio-info {
-  background-color: var(--surface-color);
-  padding: 30px;
-  box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
-}
-
-.portfolio-details .portfolio-info h3 {
-  font-size: 22px;
-  font-weight: 700;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid
-    color-mix(in srgb, var(--default-color), transparent 85%);
-}
-
-.portfolio-details .portfolio-info ul {
-  list-style: none;
-  padding: 0;
-  font-size: 15px;
-}
-
-.portfolio-details .portfolio-info ul li + li {
-  margin-top: 10px;
-}
-
-.portfolio-details .portfolio-description {
-  padding-top: 30px;
-}
-
-.portfolio-details .portfolio-description h2 {
-  font-size: 26px;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-
-.portfolio-details .portfolio-description p {
-  padding: 0;
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
 }
 
 /*--------------------------------------------------------------
