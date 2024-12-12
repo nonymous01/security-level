@@ -1214,7 +1214,7 @@ section,
 # Team Section
 --------------------------------------------------------------*/
 .team .team-member {
-  background-color: var(--icon-bg-color);
+  background-color: var(--nav-dropdown-hover-color);
   overflow: hidden;
   border-radius: 5px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
@@ -1267,13 +1267,14 @@ section,
   font-weight: 700;
   margin-bottom: 5px;
   font-size: 18px;
+  color: #fff;
 }
 
 .team .team-member .member-info span {
   display: block;
   font-size: 13px;
   font-weight: 400;
-  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  color: #fff;
 }
 
 .team .team-member:hover .social {
