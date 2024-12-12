@@ -807,7 +807,7 @@ section,
   font-size: 13px;
   display: inline-flex;
   align-items: center;
-  border: 2px solid var(--accent-color);
+  border: 2px solid var(--icon-bg-color);
 }
 
 .about .content .about-btn i {
@@ -1267,7 +1267,7 @@ section,
   font-weight: 700;
   margin-bottom: 5px;
   font-size: 18px;
-  color: #fff;
+  color: var(--icon-bg-color);
 }
 
 .team .team-member .member-info span {
