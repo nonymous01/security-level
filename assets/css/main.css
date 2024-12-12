@@ -548,7 +548,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 99999;
-  background-color: var(--accent-color);
+  background-color: var(--icon-bg-color);
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -1721,4 +1721,8 @@ section,
 
 .features .tab-pane p:last-child {
   margin-bottom: 0;
+}
+
+.stretched-link:hover{
+  color: white;
 }
