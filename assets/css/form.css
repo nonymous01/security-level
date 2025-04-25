@@ -1,0 +1,52 @@
+.information {
+    justify-content: center;
+    text-align: center;
+}
+
+.information .formulaire form{
+    margin-bottom: 70px;
+}
+
+.information .formulaire a{
+    background-color: var(--accent-color);
+    color: #fff;
+    padding: 7px 25px;
+    border-radius: 20px;
+    
+}
+
+.information .formulaire a:hover{
+    background-color: var(--icon-bg-color);
+    color: black;
+}
+
+.information .formulaire  {
+    padding: 75px;
+    justify-content: center;
+    text-align: center;
+}
+
+.information .formulaire h2 {
+    text-align: center;
+}
+
+.information .formulaire .element {
+    padding: 15px;
+}
+.information .formulaire .element input {
+    padding-right: 75px;
+    margin-left: 25px;
+    border-radius: 5px;
+    height: 35px;
+    text-align: left;
+}
+
+.information .formulaire .element label{
+    color: rgb(68, 67, 67);
+    padding: 0;
+    font-weight: bold;
+}
+
+.information .formulaire .element .label {
+    margin-left: 46px;
+}
